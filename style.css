@@ -81,6 +81,17 @@ h2 {
   border-radius: 4px;
 }
 
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right img.profile-pic {
+  order: 2;
+}
+
+
 footer {
   margin-top: 50px;
   text-align: center;
