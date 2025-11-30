@@ -66,10 +66,7 @@ section {
 
 /* --------------------------------------- */
 /* FOOTER + ICONS                          */
-/* --------------------------------------- */
-/* --------------------------------------- */
-/* FOOTER + ICONS                          */
-/* --------------------------------------- */
+
 
 footer {
   text-align: center;
@@ -79,33 +76,28 @@ footer {
 }
 
 .footer-icons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 22px;         /* PERFECT spacing, no underscores, no inline spacing */
   margin-bottom: 12px;
 }
 
-/* Same color for all icons — sampled from Google Scholar logo (#4285F4) */
 :root {
-  --icon-blue: #4285F4;
+  --icon-blue: #4285F4;   /* Google Scholar blue */
 }
 
-/* Email + LinkedIn */
+/* Email + LinkedIn icons */
 .footer-icon {
-  font-size: 2.8rem;      /* Bigger and consistent */
+  font-size: 2.8rem;
   color: var(--icon-blue);
-  margin: 0 18px;
 }
 
-/* Google Scholar PNG — scale to match FA icons visually */
+/* Google Scholar image (use original color, no filter) */
 .scholar-img {
-  width: 48px;            /* visually same as FA 2.8rem */
+  width: 48px;
   height: 48px;
   object-fit: contain;
-  margin: 0 12px;
-  filter: brightness(0) saturate(100%) invert(44%) sepia(85%) saturate(1847%)
-          hue-rotate(203deg) brightness(96%) contrast(92%);
-  /* above filter recolors ANY png to Google-Blue */
 }
-
 
 
 /* --------------------------------------- */
