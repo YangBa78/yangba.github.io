@@ -87,14 +87,14 @@ footer {
 
 /* FontAwesome icons (email, linkedin) */
 .footer-link i {
-  font-size: 2em;
+  font-size: 4em;
   vertical-align: middle;
 }
 
 /* Google Scholar PNG — match baseline + size + color */
 .scholar-img {
-  width: 32px;        /* SAME size as fontawesome icons */
-  height: 32px;
+  width: 48px;        /* SAME size as fontawesome icons */
+  height: 48px;
   vertical-align: middle;
   object-fit: contain;
   border-radius: 0;
@@ -113,7 +113,7 @@ footer {
 
 /* Optional smaller LinkedIn fix */
 .linkedin-icon .fa-linkedin {
-  font-size: 1.85em;
+  font-size: 4em;
 }
 
 
