@@ -114,7 +114,15 @@
 <footer>
   <div class="footer-icons">
     <a href="mailto:yangba@asu.edu"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://scholar.google.com/citations?user=gXDjDzsAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google"></i></a>
+        <!-- Google Scholar as inline SVG (mortarboard) -->
+    <a href="https://scholar.google.com/citations?user=gXDjDzsAAAAJ&hl=en"
+       class="footer-link scholar-link" target="_blank" aria-label="Google Scholar">
+      <!-- Inline mortarboard SVG -->
+      <svg class="scholar-svg" viewBox="0 0 24 24" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z" fill="currentColor"/>
+        <path d="M11 12.2V22h2v-9.8l7-3.18V9l-9 4-9-4v-.98l9 3.18z" fill="currentColor" opacity="0.9"/>
+      </svg>
+    </a>
     <a href="https://www.linkedin.com/in/yang-ba-378733186/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
   </div>
 
