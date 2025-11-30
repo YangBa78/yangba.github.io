@@ -103,3 +103,33 @@ h2::before {
   margin-bottom: 12px;
 }
 
+/* Wrap image + contact links together */
+.about-right {
+  float: right;
+  width: 220px;            /* controls width of right block */
+  text-align: center;      /* center links under photo */
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+/* Bigger profile photo */
+.profile-pic-right {
+  width: 200px;            /* increase size */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;     /* space between photo and links */
+}
+
+/* Vertical contact icons directly under image */
+.contact-icons-vertical a {
+  display: block;          /* force each link on its own line */
+  margin: 6px 0;
+  text-decoration: none;
+  color: #0366d6;
+  font-size: 1.05em;
+}
+
+.contact-icons-vertical a i {
+  margin-right: 6px;
+}
+
