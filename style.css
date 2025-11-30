@@ -10,13 +10,9 @@ body {
 /* Navigation */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 25px;
-}
-
-.nav-spacer {
-  flex: 1; /* pushes links to the right */
 }
 
 .nav-links a {
@@ -26,17 +22,11 @@ body {
   font-size: 1.05em;
 }
 
-
-.nav-title {
-  font-size: 1.4em;
-  font-weight: bold;
-}
-
 .nav-links a:hover {
   text-decoration: underline;
 }
 
-/* Header */
+/* Header (unused but kept) */
 .header {
   display: flex;
   align-items: center;
@@ -51,20 +41,7 @@ body {
   object-fit: cover;
 }
 
-.tagline {
-  font-size: 1.1em;
-  color: #555;
-}
-
-/* Sections */
-
-/* h2 {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-} */
-
-/* Photo floated right and wrapped */
+/* Photo wrapped on right */
 .profile-pic-right {
   float: right;
   width: 160px;
@@ -74,40 +51,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* News */
-.news-list {
-  list-style: none;
-  padding-left: 0;
-}
-.news-list li {
-  margin: 5px 0;
-}
-.date {
-  font-weight: bold;
-  margin-right: 8px;
-}
-
-/* Publications */
-.pub {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-.pub-img {
-  width: 120px;
-  height: auto;
-  border-radius: 4px;
-}
-
-.header-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-right img.profile-pic {
-  order: 2;
-}
 /* Contact icons */
 .contact-icons {
   margin-top: 20px;
@@ -119,8 +62,15 @@ body {
   color: #0366d6;
   font-size: 1.05em;
 }
+
 .contact-icons i {
   margin-right: 6px;
+}
+
+/* Publications */
+.pub {
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* Footer */
@@ -131,17 +81,22 @@ footer {
   color: #777;
 }
 
-
+/* SECTION HEADERS — only ONE line ABOVE */
 h2 {
   font-size: 1.5em;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 12px;
   font-weight: bold;
   color: #222;
   position: relative;
   padding-top: 15px;
+
+  /* Remove ANY inherited borders or bottom lines */
+  border: none !important;
+  border-bottom: none !important;
 }
 
+/* LINE ABOVE every section header */
 h2::before {
   content: "";
   display: block;
@@ -149,4 +104,9 @@ h2::before {
   height: 2px;
   background: #e5e5e5;
   margin-bottom: 12px;
+}
+
+/* Ensure NO line below the heading */
+h2::after {
+  content: none !important;
 }
