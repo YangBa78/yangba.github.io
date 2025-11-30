@@ -28,7 +28,7 @@
   <p>
     I am a final-year Ph.D. student in Data Science, Analytics and Engineering at
     Arizona State University, School of Computing and Augmented Intelligence, where I am co-supervised by
-    Rong Pan and Michelle V. Mancenido, and worked with the DHS Center for Accelerating Operational Efficiency (DHS-CAOE).
+    Dr. Rong Pan and Dr. Michelle V. Mancenido, and worked with the DHS Center for Accelerating Operational Efficiency (DHS-CAOE).
     I previously earned my M.S. in Business Analytics from the University of Connecticut.
   </p>
 
@@ -93,8 +93,8 @@
 <footer>
   <div class="footer-icons">
     <a href="mailto:yangba@asu.edu"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://scholar.google.com/" target="_blank"><i class="fa-brands fa-google"></i></a>
-    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://scholar.google.com/citations?user=gXDjDzsAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google"></i></a>
+    <a href="https://www.linkedin.com/in/yang-ba-378733186/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
   </div>
 
   <span id="year"></span> © Yang Ba — Powered by GitHub Pages
@@ -102,7 +102,13 @@
 
 <script>
   document.getElementById("year").innerText = new Date().getFullYear();
+
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const now = new Date();
+  const formatted = months[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+  document.getElementById("updated-date").innerText = "Last updated: " + formatted;
 </script>
+
 
 </body>
 </html>
