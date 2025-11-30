@@ -82,12 +82,12 @@ footer {
 .footer-link {
   margin: 0 12px;
   text-decoration: none;
-  color: #0366d6;
+  /* color: #0366d6; */
 }
 
 /* Email & LinkedIn (FontAwesome icons) */
 .footer-link i {
-  font-size: 3em;         /* controls email + linkedin size */
+  font-size: 4em;         /* controls email + linkedin size */
   vertical-align: middle;
 }
 
@@ -103,7 +103,7 @@ footer {
 
 /* Optional: LinkedIn slight size tweak */
 .linkedin-icon .fa-linkedin {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 
