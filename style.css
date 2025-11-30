@@ -81,19 +81,19 @@ footer {
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 30px;        /* spacing between icons */
+  gap: 30px;
   margin-bottom: 12px;
 }
 
-/* Increase all FA icon sizes + make them black */
-.footer-icon {
-  font-size: 3.4rem;   /* << increase overall size */
-  color: black;        /* email + linkedin black */
+/* Force FA icons to be black */
+.footer-icons i {
+  font-size: 3.4rem;
+  color: #000 !important;     /* <-- the guaranteed fix */
 }
 
-/* Google Scholar PNG — match size with FA icons */
+/* Google Scholar PNG size */
 .scholar-img {
-  width: 65px;         /* increase size */
+  width: 65px;
   height: 65px;
   object-fit: contain;
 }
