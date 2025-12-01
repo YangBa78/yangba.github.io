@@ -63,20 +63,20 @@ footer {
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 15px;            /* Reduced gap from 30px to 15px */
   margin-bottom: 12px;
 }
 
-/* Force FA icons (Email & LinkedIn) to be black */
+/* Force FA icons to be black and smaller */
 .footer-icons i {
-  font-size: 3.4rem;
+  font-size: 2.4rem;    /* Reduced size from 3.4rem to 2.4rem */
   color: #000 !important;     
 }
 
 /* Google Scholar PNG size */
 .scholar-img {
-  width: 65px;
-  height: 65px;
+  width: 45px;          /* Reduced size from 65px to 45px */
+  height: 45px;
   object-fit: contain;
 }
 
